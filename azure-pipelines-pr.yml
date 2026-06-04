@@ -28,11 +28,11 @@ steps:
 - task: SonarCloudPrepare@4
   inputs:
     SonarCloud: 'SonarCloud-ecommerce'
-    organization: 'ecommerce-56'
+    organization: 'e-commerce-56'
     scannerMode: 'CLI'
     configMode: 'manual'
-    cliProjectKey: 'konasatish4444_ecommerce'
-    cliProjectName: 'ecommerce'
+    cliProjectKey: 'e-commerce-56_e-commerce-56'
+    cliProjectName: 'e-commerce-56'
     cliSources: '.'
 
 - task: SonarCloudAnalyze@4
