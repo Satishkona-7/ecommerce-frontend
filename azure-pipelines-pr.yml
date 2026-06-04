@@ -1,9 +1,9 @@
-trigger:
+trigger: none
+
+pr:
   branches:
     include:
-      - dev
-
-pr: none
+      - Dev
 
 pool:
   vmImage: ubuntu-latest
