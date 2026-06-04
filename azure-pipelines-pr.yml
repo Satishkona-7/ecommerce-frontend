@@ -9,7 +9,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-
+- checkout: self
+  fetchDepth: 0
+  
 - task: NodeTool@0
   inputs:
     versionSpec: '20.x'
@@ -25,12 +27,12 @@ steps:
 
 - task: SonarCloudPrepare@3
   inputs:
-    SonarQube: 'SonarCloud'
+    SonarCloud: 'SonarCloud'
     organization: 'konasatish4444'
     scannerMode: 'CLI'
     configMode: 'manual'
     cliProjectKey: 'konasatish4444_python-sonar-demo'
-    cliProjectName: 'frontend'
+    cliProjectName: 'python-sonar-demo'
     cliSources: '.'
 
 - task: SonarCloudAnalyze@3
