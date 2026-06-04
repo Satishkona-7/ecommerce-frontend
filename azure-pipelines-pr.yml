@@ -1,7 +1,7 @@
 pr:
   branches:
     include:
-      - dev
+      - Dev
 
 trigger: none
 
@@ -11,7 +11,7 @@ pool:
 steps:
 - checkout: self
   fetchDepth: 0
-  
+
 - task: NodeTool@0
   inputs:
     versionSpec: '20.x'
@@ -28,11 +28,11 @@ steps:
 - task: SonarCloudPrepare@3
   inputs:
     SonarCloud: 'SonarCloud'
-    organization: 'konasatish4444'
+    organization: 'ecommerce-56'
     scannerMode: 'CLI'
     configMode: 'manual'
-    cliProjectKey: 'konasatish4444_python-sonar-demo'
-    cliProjectName: 'python-sonar-demo'
+    cliProjectKey: 'konasatish4444_ecommerce'
+    cliProjectName: 'ecommerce'
     cliSources: '.'
 
 - task: SonarCloudAnalyze@3
