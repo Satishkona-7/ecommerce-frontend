@@ -27,7 +27,7 @@ steps:
 
 - task: SonarCloudPrepare@3
   inputs:
-    SonarCloud: 'SonarCloud'
+    SonarCloud: 'SonarCloud-ecommerce'
     organization: 'ecommerce-56'
     scannerMode: 'CLI'
     configMode: 'manual'
