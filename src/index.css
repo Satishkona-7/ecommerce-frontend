@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 350px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.product-card {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
